@@ -25,12 +25,10 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Mayara Giorno",
-    specialty: "Product Strategist with founder experience in zero-to-one product development.",
-    summary:
-     "I explore how products, systems, and human behavior interact under real-world constraints. My work focuses on zero-to-one thinking, ecosystem design, and translating ambiguity into structured product direction.",
-    email: "giomaya@proton.me",
-  },
+    name: "Mayara Giorno ",
+    specialty: "Product Strategist • Founder • Systems Thinker",
+    summary: "I explore ambiguity, innovation, and product strategy through real-world product building.",   
+},
   experience: [
     {
       company: "Zalmart",
