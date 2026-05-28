@@ -1,15 +1,15 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Mayara Giorno, MSc — Product Strategist",
+  author: "Mayara Giorno, MSc",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+   "Product strategist focused on systems thinking, innovation, and zero-to-one product development.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
   navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Projects", href: "#projects" },
+    { text: "Experience", href: "#projects" },
+    { text: "Case Studies", href: "#case-studies" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
@@ -25,11 +25,11 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Mayara Giorno",
+    specialty: "Product Strategist with founder experience in zero-to-one product development.",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+     "I explore how products, systems, and human behavior interact under real-world constraints. My work focuses on zero-to-one thinking, ecosystem design, and translating ambiguity into structured product direction.",
+    email: "giomaya@proton.me",
   },
   experience: [
     {
