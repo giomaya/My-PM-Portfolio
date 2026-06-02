@@ -6,20 +6,19 @@ export const SITE_CONFIG: SiteConfig = {
   description:
    "Product strategist focused on systems thinking, innovation, and zero-to-one product development.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/mayara-small.jpg",
   navLinks: [
-    { text: "Work", href: "/work" },
-    { text: "Approach", href: "/approach" },
-    { text: "About", href: "/about" },
+    { text: "Selected Works", href: "/work" },
+    { text: "How I Work", href: "/approach" },
+    { text: "About Me", href: "/about" },
   ],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/maya-giorno/" },
     { text: "GitHub", href: "https://github.com/giomaya" },
-    { text: "Email", href: "https://github.com/immois/astro-zen" },
-    { text: "Easter Egg ?", href: "https://github.com/immois/astro-zen" },
+    { text: "Email", href: "mailto:giomaya@pm.me" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/mayara-og.png",
+  canonicalURL: "https://mayaragiorno.com",
 };
 
 export const SITE_CONTENT: SiteContent = {
