@@ -12,13 +12,93 @@ import Layout from "@layouts/Layout.astro";
       My response is usually curiosity.
     </p>
 
-    <p class="mt-12 max-w-3xl text-lg text-neutral leading-relaxed">
-      I've lived in multiple countries, learned several languages, started a
-      company, and spent the last decade following my curiosity across different
-      disciplines.
-
-      In retrospect, I've learned that the most interesting problems rarely
-      belong to a single discipline.
-    </p>
+    <div
+    id="about-paragraph"
+    class="mt-12 max-w-3xl text-lg text-white leading-relaxed transition-colors duration-700"
+    >
+      <span>I've lived in </span>
+    
+      <button
+        id="countries-button"
+        class="underline underline-offset-4"
+      >
+        multiple countries
+      </button>
+    
+      <span id="countries-content">
+        <span class="country hidden opacity-0 transition-opacity duration-500">
+          , Brazil (0–10)
+        </span>
+      
+        <span class="country hidden opacity-0 transition-opacity duration-500">
+          , Singapore (10–12)
+        </span>
+      
+        <span class="country hidden opacity-0 transition-opacity duration-500">
+          , United States (12–14)
+        </span>
+      
+        <span class="country hidden opacity-0 transition-opacity duration-500">
+          , United Kingdom (14–16)
+        </span>
+      
+        <span class="country hidden opacity-0 transition-opacity duration-500">
+          , Netherlands (16–present)
+        </span>
+      </span>
+    
+      <span>, learned several languages, started a company, and spent the last decade following my curiosity across different disciplines.</span>
+    
+      <p class="mt-8">
+        In retrospect, I've learned that the most interesting problems rarely
+        belong to a single discipline.
+      </p>
+    </div>
   </section>
+  <script>
+    const button = document.getElementById("countries-button");
+    const paragraph = document.getElementById("about-paragraph");
+  
+    const countries = document.querySelectorAll(".country");
+  
+    let expanded = false;
+    let timeouts = [];
+  
+    button?.addEventListener("click", () => {
+      if (!expanded) {
+        expanded = true;
+  
+        paragraph?.classList.remove("text-white");
+        paragraph?.classList.add("text-neutral");
+  
+        countries.forEach((country, index) => {
+          country.classList.remove("hidden");
+  
+          const timeout = setTimeout(() => {
+            country.classList.remove("opacity-0");
+            country.classList.add("opacity-100");
+          }, index * 150);
+  
+          timeouts.push(timeout);
+        });
+      } else {
+        expanded = false;
+  
+        timeouts.forEach(clearTimeout);
+        timeouts = [];
+  
+        countries.forEach((country) => {
+          country.classList.remove("opacity-100");
+          country.classList.add("opacity-0");
+  
+          setTimeout(() => {
+            country.classList.add("hidden");
+          }, 500);
+        });
+  
+        paragraph?.classList.remove("text-neutral");
+        paragraph?.classList.add("text-white");
+      }
+    });
+  </script>
 </Layout>
